@@ -7,7 +7,7 @@
    check the answer
 3. While answer is not correct, repeat the question
 
----------------------------------------------------------------
+----------------------------------------------
 
 ## Task 1: Study Timer
 **Task: Write a program that acts as a study timer**
