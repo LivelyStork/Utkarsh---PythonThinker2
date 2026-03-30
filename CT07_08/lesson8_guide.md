@@ -162,3 +162,31 @@ Enter a sentence: <<"This is a sentence, check for palindrome">>
 Output:
 1 palindrome detected:
 a
+
+Task 9
+is_8char_long = False
+is_upper_case = False
+is_lower_case = False
+is_num = False
+is_alnum = False
+
+while True:
+    password = input("passwords?: ").strip()
+    if password == "":
+        print("Password cannot be empty or blank.")
+        continue
+    if len(password) >= 8:
+        is_8char_long = True
+    for char in password:
+        if char.isupper():
+            is_upper_case = True
+        if char.islower():
+            is_lower_case = True
+        if char.isdigit():
+            is_num = True
+
+    if password.isalnum():
+        is_alnum = True
+
+    if is_8char_long and is_upper_case and is_lower_case and is_num and is_alnum:
+        break
