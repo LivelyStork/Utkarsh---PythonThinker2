@@ -80,29 +80,35 @@ artist.color("blue")
 # for i in range(2):
 #     draw_squares()
 #     artist.forward(25)
+# size = 350
+# # turtle.done()
+# def draw_squares(size):
+#     artist.penup()
+#     artist.goto(size/-2,size/2)
+#     artist.pendown()
+#     for i in range(4):
+#         artist.forward(size)
+#         artist.right(90)
+#     artist.penup()
 
+# for i in range(7):
+#     draw_squares(size)
+#     size -= 50
+
+# artist.goto(0,0)
+# for i in range(5):
+#     draw_squares()
+#     artist.right(90)
+#     artist.forward(20)
+#     artist.left(90)
+# artist.left(90)
+# artist.forward(20)
+# artist.right(90)
+# artist.forward(20)
+# for i in range(2):
+#     draw_squares()
+#     artist.forward(20)
 # turtle.done()
-def draw_squares():
-    artist.pendown()
-    for i in range(4):
-        artist.forward(20)
-        artist.right(90)
-    artist.penup()
-
-artist.goto(0,0)
-for i in range(5):
-    draw_squares()
-    artist.right(90)
-    artist.forward(20)
-    artist.left(90)
-artist.left(90)
-artist.forward(20)
-artist.right(90)
-artist.forward(20)
-for i in range(2):
-    draw_squares()
-    artist.forward(20)
-turtle.done()
 # artist.penup()
 # artist.goto(0,0)
 # artist.pendown()
@@ -165,8 +171,43 @@ turtle.done()
 # 3. Using the  draw_shape() function, draw the following:
 # - Pentagon, Hexagon, Octagon and Decagon
 
+# def draw_shape(length, num_sides):
+#     angle = 360/int(num_sides)
+#     # ((int(num_sides) - 2)*180)/int(num_sides) 
+#     artist.pendown()
+#     for i in range(int(num_sides)):
+#         artist.forward(int(length))
+#         artist.right(angle)
+#     artist.penup()
+
+# length = input("How long do want each side of the shape to be? ")
+# num_sides = int(input("How many sides do you want the shape to have? "))
+# artist.penup()
+# artist.goto(-150,150)
+# draw_shape(length, num_sides)
+# turtle.done()
 # ## Task 4: Drawing a House
 # You have been tasked to draw a house (made of a square and a triangle)
+
+# length = input("How long do want each side of the shape to be? ")
+# num_sides = int(input("How many sides do you want the shape to have? "))
+# artist.penup()
+# artist.goto(-150,150)
+# draw_shape(length, num_sides)
+# length = input("How long do want each side of the shape to be? ")
+# num_sides = int(input("How many sides do you want the shape to have? "))
+# artist.left(60)
+# draw_shape(length, num_sides)
+
+# def draw_house():
+#     artist.penup()
+#     artist.goto(-150,150)
+#     draw_shape(100, 4)
+#     artist.left(60)
+#     draw_shape(100, 3)
+
+# draw_house()
+# turtle.done()
 
 # Using the ‘draw_shape’ function you have just created, create a house by first drawing a square, then a triangle above the square.
 # 1. The house is made up of a 100x100 square and a triangle that is 100 units long each side.
